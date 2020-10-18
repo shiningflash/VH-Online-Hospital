@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="7dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFFF"
+            android:background="#1C6FB4"
+            android:padding="15dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/about_us_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:drawableLeft="@drawable/ic_people_black_24dp"
+                    android:paddingStart="10dp"
+                    android:background="#155C94"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/feedback_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback and Comments"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/ic_chat_black_24dp"
+                    android:paddingStart="10dp"
+                    android:drawableTint="#FFFF"
+                    android:background="#155C94"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/delete_account_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="35dp"
+                    android:background="#F0574E"
+                    android:paddingStart="10dp"
+                    android:drawableLeft="@drawable/ic_warning"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

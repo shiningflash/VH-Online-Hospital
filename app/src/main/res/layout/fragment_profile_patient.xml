@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vhoh_profile"
+    tools:context=".FragmentProfilePatient">
+
+    <ScrollView
+        android:id="@+id/scroll_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#00000000"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/card_patient_view"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/profile_patient_name"
+                        style="@style/HomepageTitleStyle"
+                        android:textSize="30sp"
+                        android:text="Abul Monsur"
+                        android:textColor="#FFFF"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/profile_patient_address"
+                        style="@style/DoctorTextStyle"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="Pekua, Cox's Bazar"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@+id/profile_patient_name"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:gravity="center">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TableRow>
+
+                        <Button
+                            android:id="@+id/patient_send_message_button"
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/edit1"
+                            android:text="Message"
+                            android:visibility="gone"
+                            android:textColor="#240202"
+                            android:drawableTop="@drawable/ic_chat_black_40dp"
+                            android:padding="8dp"
+                            android:drawableTint="#03A9F4"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/edit1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:text="Contact Information:"
+                        android:textSize="22sp"
+                        android:textColor="#110101"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/profile_patient_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email: abulmonsur@gmail.com"
+                        android:textSize="20sp"
+                        android:textColor="#2C0404"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/profile_patient_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: 01521-400404"
+                        android:textSize="20sp"
+                        android:textColor="#380707"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:background="@drawable/edit1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:textStyle="bold"
+                        android:text="About me:"
+                        android:textSize="22sp"
+                        android:textColor="#290606"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/profile_patient_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Age - 22"
+                        android:textSize="20sp"
+                        android:textColor="#1F0404"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/profile_patient_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I am a patient."
+                        android:textSize="20sp"
+                        android:textColor="#1F0404"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                android:layout_marginTop="10dp"
+                ads:adUnitId="ca-app-pub-2083854378971292/1344612621">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

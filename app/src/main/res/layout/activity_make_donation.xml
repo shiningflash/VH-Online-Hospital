@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MakeDonationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/baumans"
+                android:text="Make Donation"
+                android:textColor="#E4F85757"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/edit1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:text="Donate 'Voice of Humanity Foundation'. It's a Govt. listed NGO in Bangladesh that are working for the Rohingya refugees, street child and the underprivileged people of Bangladesh. We are working in 4 sectors - Health, Education, Environment and Women Empowerment."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:text="We all know, it's a hard time for all people around the world. So, we arranged online services from expert doctors through this app so that people can get health services sitting by home without any fees."/>
+
+
+                <Button
+                    android:id="@+id/visit_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="#FFFF"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button1"
+                    android:text="Visit our website for more details"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/bkash_avatar"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:text="Make your donation and then fill up the form. We will update your donation information soon."/>
+
+                <Button
+                    android:id="@+id/how_send_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="#FFFF"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button1"
+                    android:text="Learn how to send us money in bkash"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:text="bKash Merchant Number:"/>
+
+                    <TextView
+                        android:id="@+id/merchant_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:text="01##########"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:text="Fill up the form"/>
+
+                    <EditText
+                        android:id="@+id/donor_name"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter you name"
+                        android:inputType="textPersonName"
+                        style="@style/TableETStyle"/>
+
+                    <EditText
+                        android:id="@+id/donor_contact"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter bKash sender no"
+                        android:inputType="phone"
+                        style="@style/TableETStyle"/>
+
+                    <EditText
+                        android:id="@+id/donor_amount"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount (taka)"
+                        android:inputType="numberDecimal"
+                        style="@style/TableETStyle"/>
+
+                    <EditText
+                        android:id="@+id/donor_trxid"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter TrxID"
+                        android:inputType="text"
+                        style="@style/TableETStyle"/>
+
+                    <Button
+                        android:id="@+id/donation_submit_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button1"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold"
+                        android:text="Submit"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Your light help is a greater help for humanity."/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

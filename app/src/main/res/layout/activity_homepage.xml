@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EC7C74">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VH Online Hospital"
+            android:textColor="#FFFF"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get free online service from expert doctors"
+            android:textColor="#FFFF"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="findDoctorListMethod"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/find_doctor_avatar"
+                        android:layout_width="75dp"
+                        android:layout_height="70dp"
+                        android:padding="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/doctor_avatar"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/find_doctor_avatar">
+
+                        <TextView
+                            android:id="@+id/find_doctor_title"
+                            style="@style/HomepageTitleStyle"
+                            android:text="Find Doctors"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/find_doctor_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="Connect with expert doctors, book appointment and get live video service"
+                            android:layout_below="@+id/find_doctor_title"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="gotoNotification"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/notification_avatar"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp"
+                        android:padding="6dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_chat_black_40dp"
+                        android:backgroundTint="#2196F3"
+                        android:tint="#2196F3"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/notification_avatar">
+
+                        <TextView
+                            android:id="@+id/notification_title"
+                            style="@style/HomepageTitleStyle"
+                            android:textSize="20sp"
+                            android:text="Notifications"/>
+
+                        <TextView
+                            android:id="@+id/notification_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="Check if someone wanted your appointment or your appointment granted or not."
+                            android:layout_below="@+id/notification_title"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="gotoMyDoctorButton"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/my_doctor_avatar"
+                        android:layout_width="75dp"
+                        android:layout_height="70dp"
+                        android:padding="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/mydoctor_avatar"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/my_doctor_avatar">
+
+                        <TextView
+                            android:id="@+id/my_doctor_title"
+                            style="@style/HomepageTitleStyle"
+                            android:text="My Doctors"/>
+
+                        <TextView
+                            android:id="@+id/my_doctor_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="Connect with my previous doctors, show update and get update"
+                            android:layout_below="@+id/my_doctor_title"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/goto_my_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/my_contact_avatar"
+                        android:layout_width="75dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="6dp"
+                        android:layout_alignParentStart="true"
+                        android:tint="#063258"
+                        android:src="@drawable/ic_my_contacts"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/my_contact_avatar">
+
+                        <TextView
+                            android:id="@+id/my_contact_title"
+                            style="@style/HomepageTitleStyle"
+                            android:text="My Patients"/>
+
+                        <TextView
+                            android:id="@+id/my_contact_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="Connect with my patients, provide update and get update"
+                            android:layout_below="@+id/my_contact_title"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/offer_video_session_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/video_call_avatar"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp"
+                        android:padding="6dp"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="#2196F3"
+                        android:tint="#5BA6F0"
+                        android:src="@drawable/ic_voice_chat_black_24dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/video_call_avatar">
+
+                        <TextView
+                            android:id="@+id/offer_vide_session"
+                            style="@style/HomepageTitleStyle"
+                            android:text="Offer Video Session"/>
+
+                        <TextView
+                            android:id="@+id/video_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="Allow people to connect with you"
+                            android:layout_below="@+id/offer_vide_session"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/verify_doctor_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/verify_doctor_avatar"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:padding="6dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentStart="true"
+                        android:tint="#135080"
+                        android:src="@drawable/ic_verify_user"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/verify_doctor_avatar">
+
+                        <TextView
+                            android:id="@+id/verify_doctor_title"
+                            style="@style/HomepageTitleStyle"
+                            android:text="Verify Doctors"/>
+
+                        <TextView
+                            android:id="@+id/verify_doctor_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="Verify the newly registered doctors and add or discard them"
+                            android:layout_below="@+id/verify_doctor_title"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="7dp"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="makeDonation"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/donation_avatar"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:padding="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/donation_avatar"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/donation_avatar">
+
+                        <TextView
+                            android:id="@+id/donation_title"
+                            style="@style/HomepageTitleStyle"
+                            android:textSize="20sp"
+                            android:text="Make Donation"/>
+
+                        <TextView
+                            android:id="@+id/donation_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="Provide us your valuable feedback or put any comments if you wish."
+                            android:layout_below="@+id/donation_title"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="7dp"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="gotoDonorList"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/donor_list_avatar"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:padding="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/donation_avatar"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/donor_list_avatar">
+
+                        <TextView
+                            android:id="@+id/donor_list_title"
+                            style="@style/HomepageTitleStyle"
+                            android:textSize="20sp"
+                            android:text="Donor List"/>
+
+                        <TextView
+                            android:id="@+id/donor_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="We are grateful for your donation. Your help is a greater help for humanity."
+                            android:layout_below="@+id/donor_list_title"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF"
+                app:cardBackgroundColor="#FFFF"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/verify_donor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:visibility="gone"
+                    android:background="@drawable/edit1">
+
+                    <ImageView
+                        android:id="@+id/verify_donor_list_avatar"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:padding="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/donation_avatar"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/verify_donor_list_avatar">
+
+                        <TextView
+                            android:id="@+id/verify_donor_list_title"
+                            style="@style/HomepageTitleStyle"
+                            android:textSize="20sp"
+                            android:text="Verify Donor List"/>
+
+                        <TextView
+                            android:id="@+id/verify_donor_description"
+                            style="@style/HomepageTextStyle"
+                            android:text="Check the donation and add or remove accordingly."
+                            android:layout_below="@+id/verify_donor_list_title"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-3047572722822643/5377825001">
+                </com.google.android.gms.ads.AdView>
+
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-3047572722822643/5377825001">
+                </com.google.android.gms.ads.AdView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/cardview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EC7C74"
+        android:padding="2dp"
+        android:gravity="center">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/menu_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_reorder_black_24dp"
+                    android:padding="5dp"
+                    android:onClick="menuButton"
+                    android:text="Menu"
+                    android:textColor="#FFFF"
+                    android:background="#00000000"
+                    />
+
+                <Button
+                    android:id="@+id/view_profile_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="View Profile"
+                    android:onClick="viewProfileButton"
+                    android:textColor="#FFFF"
+                    android:drawableTop="@drawable/ic_user_account"
+                    android:padding="5dp"
+                    android:drawableTint="#FFFF"/>
+
+                <Button
+                    android:id="@+id/edit_profile_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="Edit Profile"
+                    android:textColor="#FFFF"
+                    android:drawableTop="@drawable/ic_user_account"
+                    android:padding="5dp"
+                    android:drawableTint="#FFFF"/>
+
+                <Button
+                    android:id="@+id/logout_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="Logout"
+                    android:textColor="#FFFF"
+                    android:drawableTop="@drawable/ic_logout_tmp"
+                    android:padding="5dp"
+                    android:layout_marginRight="30dp"
+                    android:drawableTint="#FFFF"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

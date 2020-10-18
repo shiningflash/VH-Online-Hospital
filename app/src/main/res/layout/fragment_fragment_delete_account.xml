@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDeleteAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#F00E0E"
+            android:fontFamily="@font/bangers"
+            android:text="ALERT!" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="If you click confirm, your account will be permanently deleted and your all data will be lost." />
+
+        <Button
+            android:id="@+id/delete_confirm"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:background="@drawable/button1"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</FrameLayout>

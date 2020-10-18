@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/caeview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/card_doctor_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="6dp"
+        android:background="@drawable/edit1">
+
+        <LinearLayout
+            android:id="@+id/myLL"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentStart="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card_doctor_picture"
+                style="@style/circleImageViewCard"
+                android:src="@drawable/amirulislam"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorAccent"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/myLL">
+
+            <TextView
+                android:id="@+id/card_doctor_name"
+                style="@style/HomepageTitleStyle"
+                android:text="Dr. Abul Monsur"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_doctor_degree"
+                style="@style/DoctorTextStyle"
+                android:textColor="#000"
+                android:text="MBBS, BCS"
+                android:layout_below="@+id/card_doctor_name"/>
+
+            <TextView
+                android:id="@+id/card_doctor_department"
+                style="@style/DoctorTextStyle"
+                android:layout_width="wrap_content"
+                android:background="#CF726D"
+                android:paddingStart="4dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#F5F1F1"
+                android:text="Medicine"
+                android:layout_below="@+id/card_doctor_degree"/>
+
+            <TextView
+                android:id="@+id/card_doctor_active_now"
+                style="@style/DoctorTextStyle"
+                android:layout_width="wrap_content"
+                android:background="#03A9F4"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:text="Active Now"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/card_doctor_department"/>
+
+            <TextView
+                android:id="@+id/card_doctor_availability"
+                style="@style/DoctorTextStyle"
+                android:visibility="visible"
+                android:layout_below="@+id/card_doctor_department"
+                android:text="Friday"
+                android:textColor="#000"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

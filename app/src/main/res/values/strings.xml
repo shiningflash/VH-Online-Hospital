@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">VH Online Hospital</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- PLEASE KEEP THIS App ID IN SAFE PLACE -->
+    <!-- Get your own App ID at https://dashboard.agora.io/ -->
+    <!-- After you entered the App ID, remove <##> outside of Your App ID -->
+    <string name="agora_app_id">98c59557aa554b2ebf8b51e425af41fd</string>
+    <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
+    <!-- You will need to deploy your own token server for production release -->
+    <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
+    <string name="agora_access_token">  </string>
+
+    <string name="alert_message">Stay at home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority. Source: World Health Organization</string>
+
+    <string-array name="department_name">
+        <item>Choose Department</item>
+        <item>Medicine</item>
+        <item>Child Disease Specialist</item>
+        <item>Eye Specialist</item>
+        <item>Gynaecologist</item>
+        <item>Surgeon</item>
+        <item>Psychiatrist</item>
+        <item>Neuro Surgeon</item>
+        <item>Dental Surgeon</item>
+        <item>Cardiologist</item>
+        <item>Diabetologist</item>
+        <item>Allergy Specialist</item>
+        <item>Gastroenterologist</item>
+        <item>Dietician and Nutritionist</item>
+        <item>Cancer Specialist</item>
+        <item>Nose Ear Throat Specialist</item>
+        <item>Eurologist</item>
+        <item>Tropical Medicine and Infectious Disease Specialist</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="vhbd_description">Voice of Humanity Foundation is a Govt. listed NGO in Bangladesh. We are working for the Rohingya refugees, street child and the underprivileged people of Bangladesh. We are working in 4 sectors - Health, Education, Environment and Women Empowerment.</string>
+    <string name="title_activity_homepage_drawer">HomepageDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

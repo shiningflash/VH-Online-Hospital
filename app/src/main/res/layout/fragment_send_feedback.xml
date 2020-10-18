@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSendFeedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:id="@+id/feedback_title_in_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#6B6A6A"
+            android:text="Feedback and Comments" />
+
+        <EditText
+            android:id="@+id/your_feedback"
+            android:hint="Give your valuable feedback ..."
+            android:inputType="textMultiLine"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit1"
+            android:padding="10dp"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/your_feedback_button"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:background="@drawable/button1"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditPatientProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Please, enter valid information. Your information will only be shown to the doctors that you contact."
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TableLayout
+                    android:id="@+id/patient_tablelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/patient_profile_picture"
+                            style="@style/circleImageView"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/colorAccent"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/patient_name"
+                        android:hint="Enter your name*"
+                        android:inputType="textPersonName"
+                        style="@style/TableETStyle"
+                        android:background="@drawable/edit1"/>
+
+                    <EditText
+                        android:id="@+id/patient_age"
+                        android:hint="Enter your age"
+                        android:inputType="numberDecimal"
+                        style="@style/TableETStyle"
+                        android:background="@drawable/edit1"/>
+
+                    <EditText
+                        android:id="@+id/patient_email"
+                        android:hint="Enter your email"
+                        android:inputType="textEmailAddress"
+                        style="@style/TableETStyle"
+                        android:background="@drawable/edit1"/>
+
+                    <EditText
+                        android:id="@+id/patient_contact"
+                        android:hint="Enter your phone number*"
+                        android:inputType="phone"
+                        style="@style/TableETStyle"
+                        android:background="@drawable/edit1"/>
+
+                    <EditText
+                        android:id="@+id/patient_address"
+                        android:hint="Enter your address*"
+                        android:inputType="text"
+                        style="@style/TableETStyle"
+                        android:background="@drawable/edit1"/>
+
+                    <EditText
+                        android:id="@+id/patient_description"
+                        android:hint="Write a short description ..."
+                        android:inputType="textMultiLine"
+                        android:layout_height="80dp"
+                        style="@style/TableETStyle"
+                        android:background="@drawable/edit1"/>
+
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/patient_save_profile_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button1"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:text="SAVE"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/patient_tablelayout"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Category" />
+    </group>
+
+    <item android:title="User">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_myprofile"
+                    android:icon="@drawable/ic_menu_account"
+                    android:title="My Profile" />
+                <item
+                    android:id="@+id/nav_editprofile"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Edit Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_menu_logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Support">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@drawable/ic_chat_black_24dp"
+                    android:title="Feedback" />
+                <item
+                    android:id="@+id/nav_aboutus"
+                    android:icon="@drawable/ic_people_black_24dp"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_privacy_policy"
+                    android:icon="@drawable/ic_warning_black_24dp"
+                    android:title="Privacy Policy" />
+                <item
+                    android:id="@+id/nav_delete_account"
+                    android:icon="@drawable/ic_delete_forever_black_24dp"
+                    android:title="Delete Account" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

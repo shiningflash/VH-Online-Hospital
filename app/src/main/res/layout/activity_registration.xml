@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vhoh_front_page"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    tools:context=".RegistrationActivity">
+
+
+    <Button
+        android:id="@+id/enter_into_app"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="35dp"
+        android:background="#00000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/about_us_button"
+            android:text="About Us"
+            android:drawableStart="@drawable/ic_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:textColor="#FFFF"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="100dp"
+            android:drawableTint="#FFFF"/>
+
+        <!--
+
+        <Button
+            android:id="@+id/user_guide_button"
+            android:text="User Guide"
+            android:drawableStart="@drawable/ic_user_guide_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="#FFFF"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="100dp"
+            android:drawableTint="#FFFF"/>
+            -->
+
+        <Button
+            android:id="@+id/privacy_policy_button"
+            android:text="Privacy Policy"
+            android:drawableStart="@drawable/ic_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:textColor="#FFFF"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="85dp"
+            android:drawableTint="#FFFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

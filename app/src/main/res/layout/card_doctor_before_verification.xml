@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/caeview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/card_verify_doctor_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/myLL"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_alignParentStart="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/card_verify_doctor_picture"
+                    style="@style/circleImageViewCard"
+                    android:src="@drawable/amirulislam"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/colorAccent"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/myLL">
+
+                <TextView
+                    android:id="@+id/card_verify_doctor_name"
+                    style="@style/HomepageTitleStyle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/card_verify_doctor_degree"
+                    style="@style/DoctorTextStyle"
+                    android:textColor="#000"
+                    android:layout_below="@+id/card_verify_doctor_name"/>
+
+                <TextView
+                    android:id="@+id/card_verify_doctor_department"
+                    style="@style/DoctorTextStyle"
+                    android:layout_width="wrap_content"
+                    android:background="#B96060"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#FFFF"
+                    android:layout_below="@+id/card_verify_doctor_degree"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_verify_doctor_view"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/verify_view_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="View Profile"
+                android:textSize="11sp"
+                android:background="@drawable/button"
+                android:padding="7dp"
+                />
+
+            <Button
+                android:id="@+id/verify_add_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Add AS DOCTOR"
+                android:background="@drawable/button"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="7dp"
+                />
+
+            <Button
+                android:id="@+id/verify_remove_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="REMOVE"
+                android:textSize="11sp"
+                android:background="@drawable/button1"
+                android:padding="7dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

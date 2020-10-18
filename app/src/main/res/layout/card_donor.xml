@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/caeview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/card_donor_name"
+                    style="@style/HomepageTitleStyle"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/card_donor_date"
+                    style="@style/DoctorTextStyle"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_below="@+id/card_donor_name"/>
+
+                <TextView
+                    android:id="@+id/card_donor_amount"
+                    style="@style/DoctorTextStyle"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:textStyle="bold"
+                    android:textColor="#6D0404"
+                    android:gravity="center"
+                    android:layout_below="@+id/card_donor_date"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

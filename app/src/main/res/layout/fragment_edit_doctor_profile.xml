@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentEditDoctorProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp">
+
+                <TableLayout
+                    android:id="@+id/doctor_tablelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/doctor_profile_picture"
+                            style="@style/circleImageView"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/colorAccent"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/doctor_name"
+                        android:hint="Enter you name"
+                        android:inputType="textPersonName"
+                        style="@style/TableETStyle"/>
+
+
+                    <Spinner
+                        android:id="@+id/doctor_department"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit1"
+                        android:backgroundTint="#CEE4F5"
+                        android:padding="11dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="3dp"
+                        android:entries="@array/department_name"
+                        android:layout_marginBottom="4dp"/>
+
+                    <EditText
+                        android:id="@+id/doctor_degree"
+                        android:hint="Enter your degree (eg. MBBS, BCS ..)"
+                        android:inputType="text"
+                        style="@style/TableETStyle"/>
+
+                    <EditText
+                        android:id="@+id/doctor_availability"
+                        android:hint="Enter time when you can be available"
+                        android:inputType="text"
+                        style="@style/TableETStyle"/>
+
+                    <EditText
+                        android:id="@+id/doctor_email"
+                        android:hint="Enter your email"
+                        android:inputType="textEmailAddress"
+                        style="@style/TableETStyle"/>
+
+                    <EditText
+                        android:id="@+id/doctor_contact"
+                        android:hint="Enter your phone number"
+                        android:inputType="phone"
+                        style="@style/TableETStyle"/>
+
+                    <EditText
+                        android:id="@+id/doctor_description"
+                        android:hint="Write a short description ..."
+                        android:inputType="textMultiLine"
+                        android:layout_height="70dp"
+                        style="@style/TableETStyle"/>
+
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/doctor_save_profile_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button1"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:text="SAVE"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/doctor_tablelayout"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

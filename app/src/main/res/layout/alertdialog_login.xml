@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFFF"
+            android:background="#2CA7E0"
+            android:padding="12dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/phoneAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:visibility="visible"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            app:ccp_textSize="14sp"
+                            android:background="@drawable/edit1"
+                            app:ccp_defaultNameCode="BD" />
+
+                        <EditText
+                            android:id="@+id/phoneText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="Enter Phone Number"
+                            android:padding="12dp"
+                            android:drawablePadding="12dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:background="@drawable/edit1"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_dialpad_black_24dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/codeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="12dp"
+                    android:hint=" Write you code here..."
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:background="@drawable/edit1"
+                    android:layout_below="@+id/phoneAuth"
+                    android:drawableStart="@drawable/ic_key"
+                    android:drawableTint="#000" />
+
+                <Button
+                    android:id="@+id/continueNextButton"
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/codeText"
+                    android:layout_centerHorizontal="true"
+                    android:text="Continue"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@drawable/button1"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

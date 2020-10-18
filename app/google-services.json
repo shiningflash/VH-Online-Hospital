@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "31262100671",
+    "firebase_url": "https://vhoh-87a74.firebaseio.com",
+    "project_id": "vhoh-87a74",
+    "storage_bucket": "vhoh-87a74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31262100671:android:9d0777610bb65a0dbc8a0a",
+        "android_client_info": {
+          "package_name": "com.vhoh.vhonlinehospital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31262100671-1m20fkn7nel5b8opg1asprv2dp64s578.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vhoh.vhonlinehospital",
+            "certificate_hash": "13333c760deeb635f806ea79277e1e95a1114628"
+          }
+        },
+        {
+          "client_id": "31262100671-4k60nm1ha1oea3fds6nmgr7d16orae98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vhoh.vhonlinehospital",
+            "certificate_hash": "df5dd617b2f53072fa393602b25c31e2b8731bed"
+          }
+        },
+        {
+          "client_id": "31262100671-icn0pscdqpm2c3eruoa1gv9fgqgui7rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vhoh.vhonlinehospital",
+            "certificate_hash": "05773e74da4810e790bcf59fd26fb48729ee582a"
+          }
+        },
+        {
+          "client_id": "31262100671-5r2s6vj8i8ej1bjlte69nmepfduh65ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiuaUum6EUbCxEbzmuYXTKEExlx5Ym2vU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31262100671-5r2s6vj8i8ej1bjlte69nmepfduh65ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
